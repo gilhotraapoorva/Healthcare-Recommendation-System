@@ -22,11 +22,11 @@ The dataset used is of synthetically generated 1.3M patient information that con
 ### About Dataset
 We use the term evidence as a general term to refer to a symptom or an antecedent. The dataset contains the following files:
 
-**release_evidences** a JSON file describing all possible evidences considered in the dataset.
-**release_conditions** a JSON file describing all pathologies considered in the dataset.
-**release_train_patients:** a CSV file containing the patients of the training set.
-**release_validate_patients:** a CSV file containing the patients of the validation set.
-**release_test_patients:** a CSV file containing the patients of the test set.
+- **release_evidences** a JSON file describing all possible evidences considered in the dataset.
+- **release_conditions** a JSON file describing all pathologies considered in the dataset.
+- **release_train_patients:** a CSV file containing the patients of the training set.
+- **release_validate_patients:** a CSV file containing the patients of the validation set.
+- **release_test_patients:** a CSV file containing the patients of the test set.
 
 ## About the Files
 - ``**dataset.py:**`` generates data loader for training
