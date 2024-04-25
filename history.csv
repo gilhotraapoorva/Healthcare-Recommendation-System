@@ -1,0 +1,5 @@
+Epoch, 1/5, train loss, 0.1592, train ddx acc, 82.98%, train cls acc, 99.28%, test ddx acc, 90.52%, test cls acc, 99.51%, eta, 1.7e+03s
+Epoch, 2/5, train loss, 0.0889, train ddx acc, 89.66%, train cls acc, 99.52%, test ddx acc, 92.26%, test cls acc, 99.46%, eta, 1.7e+03s
+Epoch, 3/5, train loss, 0.0767, train ddx acc, 91.10%, train cls acc, 99.54%, test ddx acc, 93.14%, test cls acc, 99.50%, eta, 1.7e+03s
+Epoch, 4/5, train loss, 0.0697, train ddx acc, 91.89%, train cls acc, 99.56%, test ddx acc, 93.58%, test cls acc, 99.55%, eta, 1.7e+03s
+Epoch, 5/5, train loss, 0.0651, train ddx acc, 92.48%, train cls acc, 99.57%, test ddx acc, 94.18%, test cls acc, 99.57%, eta, 1.7e+03s

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptoms Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(198, 237, 240);">
+  <center>
+    <div class="container">
+      <div class="symptom-box">
+        <h2 id="question">What problem are you experiencing?</h2>
+        <p>Tell us about your symptoms to help us understand your condition better.</p>
+        <textarea id="symptoms" rows="5" placeholder="Describe your symptoms here..."></textarea>
+        <button type="button" class="submit-btn" onclick="nextQuestion()">Submit</button>
+      </div>
+    </div>
+  </center>
+
+  <script>
+    var questions = [
+      "What is your age?",
+      "What is your gender",
+      // Add more questions here
+    ];
+    var currentQuestionIndex = 0;
+    var answers = []; // Array to store answers
+  
+    function nextQuestion() {
+      var input = document.getElementById("symptoms").value; // Get input value
+      answers.push(input); // Store input value in answers array
+  
+      if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        document.getElementById("question").innerText = questions[currentQuestionIndex];
+        document.getElementById("symptoms").value = ""; // Clear previous input
+      } else {
+        // If all questions are answered
+        var jsonData = JSON.stringify({ 'answers': answers }); // Convert answers array to JSON
+        fetch('/process_answers', { // Send data to server for processing
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: jsonData
+        })
+        .then(response => response.json())
+        .then(data => {
+          // Display processed data on the webpage
+          document.getElementById("result").innerText = data.result;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+      }
+    }
+  </script>
+  
+</body>
+</html>
