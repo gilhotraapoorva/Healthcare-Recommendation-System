@@ -5,7 +5,7 @@ take a sequence of patient information as input and predict a sequence of most l
 ![image](https://github.com/gilhotraapoorva/Healthcare-Recommendation-System/assets/129881446/6a989311-8894-45bd-aa28-9063a8ee93bf)
 
 ## Video
-Demo video can be accessed using [Video](https://youtu.be/wZ8f68jWkaE)
+Demo video can be accessed using [Video](https://youtu.be/5BQTT4l0F74)
 
 ## Usage
 1.Clone the repository using the following command:
