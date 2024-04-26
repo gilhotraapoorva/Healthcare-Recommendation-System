@@ -3,6 +3,7 @@
 This project aims to develop a healthcare recommendation system for people in underserved areas with limited access to doctors.  differential diagnosis will be performed using a generative Transformer which will
 take a sequence of patient information as input and predict a sequence of most likely pathologies as differential diagnosis, and finally, the most likely pathology will be predicted using a classifier.
 ![image](https://github.com/gilhotraapoorva/Healthcare-Recommendation-System/assets/129881446/6a989311-8894-45bd-aa28-9063a8ee93bf)
+![image](https://github.com/gilhotraapoorva/Healthcare-Recommendation-System/assets/129881446/5a2dbff4-d46b-4101-89af-a1a5b1b9ea41)
 
 ## Video
 Demo video can be accessed using [Video](https://youtu.be/5BQTT4l0F74)
